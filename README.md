@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+isSameValue = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/complex-float64-base-assert-is-same-value/tags). For example,
+
+```javascript
 isSameValue = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@v0.0.1-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var isSameValue = require( 'path/to/vendor/umd/complex-float64-base-assert-is-sa
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@v0.0.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -140,7 +145,7 @@ out = isSameValue( z1, z2 );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@v0.0.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
