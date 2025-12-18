@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,11 +16,15 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
 
-/// <reference types="@stdlib/types"/>
+// MODULES //
 
-import { Complex128 } from '@stdlib/types/complex';
+var isSame = require( '@stdlib/number-float64-base-assert-is-same-value' );
+var reim = require( '@stdlib/complex-float64-reim' );
+
+
+// MAIN //
 
 /**
 * Tests whether two double-precision complex floating-point numbers are the same value.
@@ -32,9 +36,9 @@ import { Complex128 } from '@stdlib/types/complex';
 *
 * [ecma-262-same-value-algorithm]: http://ecma-international.org/ecma-262/5.1/#sec-9.12
 *
-* @param z1 - first complex number
-* @param z2 - second complex number
-* @returns boolean indicating if both complex numbers are the same value
+* @param {Complex128} z1 - first complex number
+* @param {Complex128} z2 - second complex number
+* @returns {boolean} result
 *
 * @example
 * var Complex128 = require( '@stdlib/complex-float64-ctor' );
@@ -45,9 +49,16 @@ import { Complex128 } from '@stdlib/types/complex';
 * var v = isSameValue( z1, z2 );
 * // returns true
 */
-declare function isSameValue( z1: Complex128, z2: Complex128 ): boolean;
+function isSameValue( z1, z2 ) {
+	var parts1 = reim( z1 );
+	var parts2 = reim( z2 );
+	return (
+		isSame( parts1[ 0 ], parts2[ 0 ] ) &&
+		isSame( parts1[ 1 ], parts2[ 1 ] )
+	);
+}
 
 
 // EXPORTS //
 
-export = isSameValue;
+module.exports = isSameValue;
