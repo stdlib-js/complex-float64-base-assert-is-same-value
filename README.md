@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@esm/index.mjs';
+import isSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@v0.0.2-esm/index.mjs';
 ```
 
 #### isSameValue( z1, z2 )
@@ -118,7 +118,7 @@ out = isSameValue( z1, z2 );
 <script type="module">
 
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@esm/index.mjs';
-import isSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@esm/index.mjs';
+import isSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-same-value@v0.0.2-esm/index.mjs';
 
 var z1 = new Complex128( 5.0, 3.0 );
 var z2 = new Complex128( 5.0, 3.0 );
