@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/complex-float64-base-assert-is-same-value",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Test whether two double-precision complex floating-point numbers are the same value.",
   "license": "Apache-2.0",
   "author": {
@@ -39,11 +39,11 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/complex-float64-ctor": "^0.0.3",
+    "@stdlib/complex-float64-ctor": "^0.1.0",
     "@stdlib/complex-float64-reim": "^0.1.2",
     "@stdlib/number-float64-base-assert-is-same-value": "^0.2.1",
     "@stdlib/types": "^0.4.3",
-    "@stdlib/utils-library-manifest": "^0.2.2"
+    "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.2.2",
