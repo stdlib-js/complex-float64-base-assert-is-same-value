@@ -306,8 +306,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/complex-float64-base-assert-is-same-value.svg
 [npm-url]: https://npmjs.org/package/@stdlib/complex-float64-base-assert-is-same-value
 
-[test-image]: https://github.com/stdlib-js/complex-float64-base-assert-is-same-value/actions/workflows/test.yml/badge.svg?branch=v0.0.2
-[test-url]: https://github.com/stdlib-js/complex-float64-base-assert-is-same-value/actions/workflows/test.yml?query=branch:v0.0.2
+[test-image]: https://github.com/stdlib-js/complex-float64-base-assert-is-same-value/actions/workflows/test.yml/badge.svg?branch=v0.0.3
+[test-url]: https://github.com/stdlib-js/complex-float64-base-assert-is-same-value/actions/workflows/test.yml?query=branch:v0.0.3
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/complex-float64-base-assert-is-same-value/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/complex-float64-base-assert-is-same-value?branch=main
