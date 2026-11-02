@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,16 +16,28 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
-* Test whether two double-precision complex floating-point numbers are the same value.
+* Tests whether two double-precision complex floating-point numbers are the same value.
 *
-* @module @stdlib/complex-float64-base-assert-is-same-value
+* ## Notes
+*
+* -   The function implements the [SameValue Algorithm][ecma-262-same-value-algorithm], as specified in ECMAScript 5.
+* -   In contrast to the strict equality operator `===`, `-0` and `+0` are distinguishable and `NaNs` are the same.
+*
+* [ecma-262-same-value-algorithm]: http://ecma-international.org/ecma-262/5.1/#sec-9.12
+*
+* @param z1 - first complex number
+* @param z2 - second complex number
+* @returns boolean indicating if both complex numbers are the same value
 *
 * @example
 * var Complex128 = require( '@stdlib/complex-float64-ctor' );
-* var isSameValue = require( '@stdlib/complex-float64-base-assert-is-same-value' );
 *
 * var z1 = new Complex128( 5.0, 3.0 );
 * var z2 = new Complex128( 5.0, 3.0 );
@@ -33,12 +45,9 @@
 * var v = isSameValue( z1, z2 );
 * // returns true
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function isSameValue( z1: Complex128, z2: Complex128 ): boolean;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = isSameValue;
